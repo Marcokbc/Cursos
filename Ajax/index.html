@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+    <script src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <table border="1" width="100%">
+        <thead>
+            <th>Discplinas_ID</th>
+            <th>Disciplinas</th>
+            <th>Total registros</th>
+            
+        </thead>
+        <tbody class="body">
+
+        </tbody>
+    </table>
+    <script>
+        $(document).ready(function(){
+            $.ajax({
+                url:'https://10.4.3.200/bravogestor/rest/Turma/ListarDisciplinasDocr.php?cliente=caculeteste&idturma=6159',
+                type:"GET",
+                dataType:"json",
+                error: function(){
+                    console.log('Houve erro!');
+                },
+                success: function(respergunta){
+                    let conteudo = '';
+                    for(let i = 0; i < respergunta.length; i++){
+                        conteudo += '<tr> <td>'+ respergunta[i]['disciplina_id'] +'</td>';
+                        conteudo += '<td>'+ respergunta[i]['disciplina'] +'</td> ';
+                        conteudo += '<td>'+ respergunta[i]['total_registros'] +'</td></tr>';
+                        
+                    }
+                    $(".body").html(conteudo);
+                }
+
+            })
+        });
+    </script>
+</body>
+</html>

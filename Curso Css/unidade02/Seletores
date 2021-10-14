@@ -1,0 +1,14 @@
+Classe = Identificação que pode ser dada a mais de uma Tag. 
+Seletor = .
+
+ID = Identificação dada a uma unica Tag.
+Seletor = #
+
+Seletor em grupo = É so juntar tudo com virgula. EX: p,li,a
+EX2: Se quisermos pegar apenas uma li que tenha a Classe destaque - li.destaque
+
+Seletor descendente = EX: suponhamos que quisermos englobar apenas o p dentro de uma div - div p
+
+Seletor adjacente = EX: h2 + p - englobara o primeiro p apos o h2
+
+Se quiser aplicar mais de uma classe no mesmo elemento é so deixar um espaço. EX: class="destaque vermelho" 

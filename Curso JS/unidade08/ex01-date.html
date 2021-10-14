@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Aulas de Javascript</title>
+        <meta http-equiv="refresh" content="1">
+        
+        
+    </head>
+    <body>
+        <h2 id="AQUI"></h2>
+        <script>
+            var meses = ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"];
+            var days = ["Domingo","Segunda","Terça","Quarta","Quinta","Sexta","Sabado"];
+            var agora = new Date();
+
+            console.log(agora.getDate() + " de " + meses[agora.getMonth()] + " de " + agora.getFullYear());
+            
+            var aniversario = new Date(2005,11,5);  
+            console.log(days[aniversario.getDay()]);
+
+            var HORARIO = agora.getHours() + ":" + agora.getMinutes() + ":" + agora.getSeconds();
+            var local = document.getElementById("AQUI");
+
+            local.innerHTML = HORARIO ;
+            
+            
+        </script>
+    </body>
+</html>

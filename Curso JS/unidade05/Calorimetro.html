@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorimetro</title>
+    
+
+</head>
+<body>
+   
+    <h2>Calorímetro</h2>
+    
+        <label for="valor">Massa</label>
+        <input type="text" id="massa" name="valor" placeholder="Insira aqui:">
+        <br>
+        <button id="enviar" type="button">Enviar</button>
+    
+    <p>Calor específico: 1g cal/°C</p>
+    <br>
+    <p>Massa Calórimetro: 2000g</p>
+    <br>
+    <h5>Temperatura:<span id="temp">25°C</span></h5>
+    
+    <p>Massa da Amostra:</p>
+    <p id="p1"></p>
+    <br>
+    <button id="botao"></button>
+
+    <script>
+        
+        var temp = document.getElementById("temp");
+        var botao = document.getElementById("botao")
+        var enviar = document.getElementById("enviar")
+        var massa = document.getElementById("massa");
+        console.log(enviar);
+        console.log(massa);
+        var p = document.getElementById("p1");
+        enviar.addEventListener("click", function(e){
+            p.innerHTML = massa.value;
+            botao.innerHTML = "Queimar";
+        });
+        botao.addEventListener("click", function(e){
+            //temp.innerHTML = 
+        })
+        
+    </script>
+
+</body>
+</html>

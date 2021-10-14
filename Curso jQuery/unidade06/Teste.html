@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMBORA</title>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#enviar').click(function(){
+                var nome = $('#name').val();
+                var senha = $('#senha').val();
+                var cpf = $('#cpf').val();
+                if(cpf == "06895043578"){
+                    alert("CPF invalido!");
+                }else if($('#senha').val().length < 6){
+                    alert("Sua senha é muito fraca");
+                }else{
+                    $('#inserir').append("<p>"+ nome +"</p>", "<p>"+ senha +"</p>", "<p>" + cpf + "</p>");
+                    $('#enviar').off("click");
+                }
+                setTimeout(function(){
+                    window.location.reload(1);
+                }, 18000);
+
+                
+                
+                
+            })
+        })
+    </script>
+</head>
+<body>
+    <label>Nome:</label>
+    <input type="text" id="name">
+    <label>Senha:</label>
+    <input type="password" id="senha">
+    <label>CPF: </label>
+    <input type="text" id="cpf">
+    <input type="button" id="enviar" value="Enviar">
+
+    <div id="inserir">
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+Box Model - Modelo de caixa
+
+Muitas paginas podem ter a sua extruturação compreendida por caixas.
+
+Tendo caracteristicas como:
+
+Border = borda
+style = Pode ser solid, dashed (linha tracejada), dotted, double, groove, ridge, inset e outset.
+width = por px ou thin, medium e trick.
+color 
+Pode abreviar: border: solid 2px green;
+Ou colocar uma imagem: border-imagem:url(url da imagem)30 30 round;
+
+Padding = distancia interna da caixa para com seus elementos. Pode ser utilizado do mesmo modo que a margin.
+
+Margin = Mergem externa, distancia da caixa para os outros elementos. Pode ser definida especificamente como: margin-top, ou somente margin e o valor, e em alguns casos margin: 30px 30px 30px 30px, sendo top, right, bottom e left, respectivamente 
+
+Width = largura
+
+Height = Altura
+
+Propriedades de posicionamento
+Absolute 
+relative
+fixed
+static
+
+Flutuação(float)
+left
+right
+none
+inherit
+
+background
+color
+image = ex: background-image: ur('imagem.png');
+background-repeat: ; podendo ser no-repeat para n repetir ou repeat-x para repetir no eixo x e dentre outros
+background-position: ; podendo ser right, center, right center e dentre outros
+background-attachment: fixed; deixando ele fixo
+
+Sombras
+box-shadow: 10px 10px 5px #999;
+Se o primeiro valor estiver positivo a sombra fica na direita e se estiver negativo para a esquerda. O segundo o mesmo conceito porem para baixo e para cima. O terceiro é relativo ao blur da sombra. E por fim o ultimo a cor da sombra.
+Se colocar um inset antes dos valores a sombra fica dentro da caixa
+
+Text-shadow funciona da mesma maneira
+
+background: linear-gradient(to-right, blue, red);
+o tipo é linear, em direção a direita, começa com azul e termina com vermelho
+Ou
+background: linear-gradient(90 deg, blue, red);
+Grau final 
+90deg = direita; 270deg = esquerda; 0deg = em cima; 180deg = embaixo
+

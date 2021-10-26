@@ -1,0 +1,16 @@
+let elemento1 = document.getElementById("titulo");
+
+elemento1.innerHTML = "modificado pelo js";
+
+elemento1.style.color = "red";
+
+//Multiplos elementos vem em array, na vdd um htmlcollecion
+let elementos2 = document.getElementsByClassName("classe1");
+
+elementos2[0].innerText = "mdificado com js"; pegar o elemento 0
+
+let elemento3 = document.querySelector("#id1");
+
+let elemento4 = document.querySelector("#id1 > p");
+
+let elementos5 = document.querySelectorAll(".subtitulo");

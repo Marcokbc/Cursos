@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra, Papel e Tesoura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="jogo.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PPA - 2021</h1>
+            <h2>Pedra, Papel e Tesoura</h2>
+        </header>
+
+        <main id="jogo">
+            <div class="player" id="jogador">
+                <h3>Jogador</h3>
+                <div class="opcoes">
+                    <img src="img/pedra.png" class="btnopcao btn-jogador" data-opcao="pedra">
+                    <img src="img/papel.png" class="btnopcao btn-jogador" data-opcao="papel">
+                    <img src="img/tesoura.png" class="btnopcao btn-jogador" data-opcao="tesoura">
+                </div>
+
+                <div class="placar">
+                    Vitórias: <span class="vitorias">0</span>
+                </div>
+            </div>
+
+            <div class="play">
+                <h3>Selecione Pedra, Papel ou Tesoura</h3>
+                <h4>Depois de Selecionar sua opção clique em jogar</h4>
+                <button id="btn-play" disabled>Jogar</button>
+
+                <div class="mensagem">
+                    
+                </div>
+            </div>
+
+            <div class="player" id="computador">
+                <h3>Computador</h3>
+                <div class="opcoes">
+                    <img src="img/pedra.png" class="btnopcao btn-computador" data-opcao="pedra">
+                    <img src="img/papel.png" class="btnopcao btn-computador" data-opcao="papel">
+                    <img src="img/tesoura.png" class="btnopcao btn-computador" data-opcao="tesoura">
+                </div>
+
+                <div class="placar">
+                    Vitórias: <span class="vitorias">0</span>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>PPA 2021 &copy; Todos os direitos reservados</p>
+        </footer>
+    </div>
+    <script src="jogo.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E9EAEC;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 100px 1fr 100px;
+}
+
+header, footer{
+    background-color: #4B4B86;
+    border-bottom:7px solid #3c3c6e;
+    color: #FAD02C;
+    display: grid;
+    place-items: center;
+}
+
+footer{
+    border-bottom: none;
+    border-top: 7px solid #3c3c6e;
+}
+
+#jogo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.player{
+    background-color: #ACACCC;
+    margin: 10px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 80px 1fr 50px;
+}
+
+.player .opcoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player h3{
+    font-size: 2rem;
+    text-align: center;
+    color: #1A1642;
+    margin: 1rem;
+}
+
+.btnopcao{
+    width: 150px;
+    opacity: 10%;
+}
+
+.btn-jogador{
+    cursor: pointer;
+    opacity: 10%;
+}
+
+.btn-jogador:hover{
+    opacity: 40%;
+}
+
+.player .placar{
+    font-size: 1.5rem;
+    background-color: #4B4B86;
+    padding: 0.5rem;
+    color: #FAD02C;
+    font-weight: bold;
+    border-radius: 0 0 10px;
+}
+
+.play{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.play h3{
+    color: #4B4B86;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.play #btn-play{
+    width: 250px;
+    padding: 1rem;
+    background-color: #4B4B86;
+    color: #FAD02C;
+    border-radius: 20px;
+    font-size: 2rem;
+    margin: 50px auto;
+    cursor: pointer;
+}
+
+.play #btn-play:disabled{
+    cursor: default;
+    opacity: 50%;
+}
+
+.mensagem{
+    text-align: center;
+}
+
+.mensagem h3{
+    color:#C1373F;
+    font-size: 1.5rem;
+}
+
+.mensagem button{
+    padding: 1rem;
+    background-color: #FAD02C;
+    color: #1A1642;
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+

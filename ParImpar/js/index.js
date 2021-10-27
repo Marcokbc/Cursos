@@ -1,27 +1,46 @@
 let inputUsu = document.querySelector("#numUsu");
+let elTotalMachine = document.querySelector("#totalMachine");
+let elTotalPlayer = document.querySelector("#totalPlayer");
+let btnJogar = document.querySelector("#btnJogar");
 let result = document.querySelector("#result");
-let machineTotalString = document.querySelector("#totalMachine");
-let playerTotalString = document.querySelector("#totalPlayer");
+let btnReiniciar = document.querySelector("#btnReiniciar");
 
+let numMaquina = null;
+let soma = null;
+let resto = null;
+let TotalMachine = 0;
+let TotalPlayer = 0;
 
-document.getElementById("btnEnviar").addEventListener("click", function(e){
+btnJogar.addEventListener("click", function(e){
+    e.preventDefault();
+    numMaquina = parseInt(Math.random() * 10);
+    let numPlayer = inputUsu.value;
+    if(numPlayer == ""){
+        alert("Informe um Numero");
+        
+    }else{ 
+        
+        soma = numPlayer + numMaquina;
+        resto = soma % 2;
+
+        if(resto == 0){
+            result.innerHTML = "PLAYER WINS";
+            TotalPlayer++;
+            elTotalPlayer.innerHTML = TotalPlayer;
+        }else{
+            result.innerHTML = "MACHINE WINS";
+            TotalMachine++;
+            elTotalMachine.innerHTML = TotalMachine;
+        }
+    }
+});
+
+btnReiniciar.addEventListener("click", function(e){
     e.preventDefault();
 
-    let stringUsu = (inputUsu.value);
-    let numUsu = parseInt(stringUsu);
-    let numMaquina = parseInt(Math.random() * (10));
-    let resultSoma = numUsu + numMaquina;
-    let resto = resultSoma % 2;
-    let machineTotal = (machineTotalString.value);
-    let playerTotal = (playerTotalString.value);
-    console.log(numMaquina);
-    
-    if(resto == 0){
-        result.innerHTML = "PLAYER WINS";
-        playerTotal.innerHTML += 1;
-    }else{
-        result.innerHTML = "MACHINE WINS";
-        machineTotal.innerHTML += 1;
-    }
+    numPlayer = null;
+    numMaquina = null;
 
+    inputUsu.value = "";
+    result.innerHTML = "";
 });

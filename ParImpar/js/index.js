@@ -39,6 +39,7 @@ btnJogar.addEventListener("click", function(e){
 });
 
 //Evento responsavel por reiniciar
+
 btnReiniciar.addEventListener("click", function(e){
     e.preventDefault();
 

@@ -6,7 +6,7 @@ Operadores aritimeticos
 / = Divisão
 ** = potencia
 % = resto da divisão
-++ valor mais 1. Se for antes ele soma primeiro e mostra depois, se for pos mostra primeiro e soma depois
+++ valor mais 1. Se for antes ele soma primeiro e mostra depois, se for apos mostra primeiro e soma depois
 -- = valor menos 1
 */
 const num1 = 5;

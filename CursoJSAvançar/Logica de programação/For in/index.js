@@ -7,7 +7,7 @@ const pessoas = {
 console.log(pessoas.nome);
 console.log(pessoas['nome']);
 
-for(let chave in pessoa){
+for(let chave in pessoas){
     console.log(chave, pessoas[chave]);
 }
 

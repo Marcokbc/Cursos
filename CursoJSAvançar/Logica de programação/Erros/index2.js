@@ -13,11 +13,13 @@ function retornaHora(data){
     });
 }
 try{
+    //Não ha erros
     const data = new Date('01-01-1970 12:58:10');
     const hora = retornaHora(11);
     console.log(hora);
 }catch(e){
-
+    //ha erros
 }finally{
+    //Sempre
     console.log('Tenha um bom dia.')
 }

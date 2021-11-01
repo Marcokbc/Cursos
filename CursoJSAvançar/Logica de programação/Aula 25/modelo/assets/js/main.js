@@ -36,7 +36,12 @@ function Escopo(){
         }
 
         function getImc(peso, altura){
-            return (peso/altura**2).toFixed(2);
+            if(!Number.isInteger(altura)){ 
+                return (peso/altura**2).toFixed(2);
+            }else{
+                alturaMetro = altura/100;
+                return (peso/alturaMetro**2).toFixed(2);
+            }
         }
     });
 
@@ -52,7 +57,7 @@ function Escopo(){
         const p = criaP();
 
         if(isValid) {
-            p.classList.add(`paragrafo-resultado`);
+            p.classList.add('paragrafo-resultado');
         }else{
             p.classList.add('bad');
         }

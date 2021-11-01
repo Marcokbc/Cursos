@@ -11,6 +11,6 @@ for (let i = 0;i< frutas.length;i++ ){
     console.log("Esta fruta é: " + frutas[i]);
 }
 
-for(i = 100; i>10;i--){
+for(i = 100; i>0;i--){
     console.log(i);
 }

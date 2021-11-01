@@ -9,4 +9,4 @@ const pessoa = {
 };
 
 const {nome: n= '',sobrenome,endereco:{rua,...resto},endereco} = pessoa;
-console.log(n,rua,resto);
+console.log(n,rua,resto); 

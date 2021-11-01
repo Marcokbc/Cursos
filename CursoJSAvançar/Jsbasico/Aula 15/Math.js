@@ -1,7 +1,7 @@
 let num1 = 9.7867;
-let arrendondarB = Math.floor(num1);
-let arrendondarA = Math.ceil(num1);
-let arrendondar = Math.round(num1);
+let arrendondarB = Math.floor(num1);//Baixo 
+let arrendondarA = Math.ceil(num1);//Cima
+let arrendondar = Math.round(num1);//Arredonda para o mais proximo 
 
 console.log(arrendondar);
 console.log(arrendondarA);
@@ -14,7 +14,7 @@ const aleatorio = Math.round(Math.random() * (10 - 5) + 5);
 
 console.log(aleatorio);
 console.log(Math.PI);
-console.log(Math.pow(2, 10));
+console.log(Math.pow(2, 10));//Base elevada ao expoente
 console.log(2 ** 10);
 
 let num2 = 9;

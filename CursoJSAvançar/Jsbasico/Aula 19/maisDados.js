@@ -21,4 +21,5 @@ console.log(c,d);
 const teste = {
     nome: 'Marco',
 };
-const teste2 = {...a};// assim vc burla
+const teste2 = {...teste};// assim vc burla, e vc copia de fato o valor. Ou seja se vc mudar o de um n interfere no outro
+console.log(teste, teste2);

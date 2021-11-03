@@ -67,8 +67,8 @@ function salvarTarefas(){
 }
 
 function adcionaTarefasSalvas(){
-    const tarefas = localStorage.getItem('tarefas');
-    const listaDeTarefas = JSON.parse(tarefas);//convertendo de volta de uma string json para um objeto js
+    const tarefas = localStorage.getItem('tarefas');//pegando
+    const listaDeTarefas = JSON.parse(tarefas);//convertendo de volta de uma string json para um objeto js, array
 
     for(let tarefa of listaDeTarefas){
         criaTarefa(tarefa);

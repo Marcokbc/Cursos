@@ -1,21 +1,46 @@
+function rand(min = 1000, max = 3000){
+    const num = Math.random() * (max - min) + min;
+    return Math.floor(num);
+}
 function f1(){
-    setTimeout(function(){
+    setTimeout(function(callback){
         console.log('f1');
-    }, 500);
+        if(callback) callback();
+    }, rand());
 }
 function f2(){
-    setTimeout(function(){
+    setTimeout(function(callback){
         console.log('f2');
-    }, 1000);
+        if(callback) callback();
+    }, rand());
 }
 
 function f3(){
-    setTimeout(function(){
+    setTimeout(function(callback){
         console.log('f3');
-    },800);
+        if(callback) callback();
+    },rand());
     
 }
 
-f1();
-f2();
-f3();
+// f1(function(){
+//     f2(function(){
+//         f3(function(){
+//             console.log('Ola Mundo');
+//         });
+//     });
+// });
+
+f1(f1Callback);
+
+function f1Callback(){
+    f2(f2Callback);
+}
+
+function f2Callback(){
+    f3(f3Callback);
+}
+
+function f3Callback(){
+    console.log('Ola mundo');
+}

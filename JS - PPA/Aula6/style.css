@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: green;
+}
+
+#container{
+    width: 800px;
+    height: 600px;
+    border: 5px solid black;
+    background-color: greenyellow;
+    margin: 50px auto;
+    position: relative;
+    overflow: scroll;/*Pode ser hidden*/
+    /*Geralmente se usa um posicionamento relativo para controlar outro posicionamento absoluto*/
+}
+
+#quadrado{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: absolute;/*static deixa no modo padrão, ou seja cada elemento ocupa uma linha*/
+    top:150px;/*Essaspropriedades so ficam habilitadas com um posicionamento diferente de static*/ 
+    left:200px;/*Se movimenta um elemento atravez do ponto superior esquerdo*/
+    /*No posicionamento relativo a posição original é mantida como ponto de referencia. Diferente do absolute*/
+    /* O absolute pega como ponto de referencia elementos com o posicionamento diferente de static, e se não achar pega o corpo da pagina. */
+    /* Quando se movimenta um elemento por exemplo em 800px, e ele tem largura de 100px, tem que entender que ele ira até os 900px , pois o ponto de referencia é o ponto superior esquerdo*/
+}
+
+#quadrado2{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}

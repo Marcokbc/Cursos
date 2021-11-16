@@ -13,7 +13,7 @@ const outroObjeto = Object.assign({}, produto);
 console.log(Object.getOwnPropertyDescriptor(produto, 'produto'));//ve as caracteristicas/prodpriedades
 console.log(Object.values(produto));//Pode ser entries tbm, mas retorna em array
 
-for(let entry of Object.entries(produto)){
+for(let entry of Object.entries(produto)){//iteração
     console.log(entry);
 }
 

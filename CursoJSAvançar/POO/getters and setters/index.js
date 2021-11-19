@@ -27,3 +27,11 @@ class Carro{
 }
 
 const c1 = new Carro('Fusca');
+
+/**
+ * set nomeCompleto(valor){
+ *  valor = valor.split(' ');separa
+ *  this.nome = valor.shift();tira e retorna o primeiro valor
+ *  this.sobrenome = valor.join(' ');junta tudo 
+ * }
+ */

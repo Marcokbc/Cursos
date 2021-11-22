@@ -16,29 +16,29 @@
             <li>Usuario devera conter de 3 a 12 caracteres</li>
             <li>Senha precisa conter de 6 a 12 caracteres</li>
         </ul> 
-        <form action="/" method="POST" class="formulario">
-            <label for="input-nome">Nome</label>
-            <input type="text" id="input-nome" class="nome">
-
-            <label for="input-sobre">Sobrenome</label>
-            <input type="text" id="input-sobre" class="sobrenome">
-
-            <label for="input-usu">Usuario</label>
-            <input type="text" id="input-usu" class="usuario">
-
-            <label for="input-cpf">CPF</label>
-            <input type="text" id="input-cpf" class="cpf">
-
-            <label for="input-pass">Senha</label>
-            <input type="password" id="input-pass" class="password">
-            
-            <label for="input-rePass">Repita Senha</label>
-            <input type="password" id="input-rePass" class="repassword"
-            <button>Enviar</button>
-        </form>
+        <form action="/" method="POST" class='formulario'>
+            <label>Nome</label>
+            <input type="text" class="nome validar">
+            <label>Sobrenome</label>
+            <input type="text" class="sobrenome validar">
+            <label>CPF</label>
+            <input type="text" class="cpf validar">
+            <label>Usuário</label>
+            <input type="text" class="usuario validar">
+            <label>Senha</label>
+            <input type="password" class="senha validar">
+            <label>Repetir Senha</label>
+            <input type="password" class="repetir-senha validar">
+            <button type="submit">Enviar</button>
+          </form>
+        </section>
+      
+        <script src="./assets/js/validaCPF.js"></script>
+        <script src="./assets/js/main.js"></script>
     </section>
 
 
-    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/ValidaForm.js"></script>
+    <script src="./assets/js/ValidaCPF.js"></script>
 </body>
 </html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <section class="container">
+        <h1>Formulario de Cadastro</h1>     
+        <ul>
+            <li>Nenhum campo deve estar vazio</li>
+            <li>Usuario so podera conter letras e/ou numeros</li>
+            <li>Usuario devera conter de 3 a 12 caracteres</li>
+            <li>Senha precisa conter de 6 a 12 caracteres</li>
+        </ul> 
+        <form action="/" method="POST" class="formulario">
+            <label for="input-nome">Nome</label>
+            <input type="text" id="input-nome" class="nome">
+
+            <label for="input-sobre">Sobrenome</label>
+            <input type="text" id="input-sobre" class="sobrenome">
+
+            <label for="input-usu">Usuario</label>
+            <input type="text" id="input-usu" class="usuario">
+
+            <label for="input-cpf">CPF</label>
+            <input type="text" id="input-cpf" class="cpf">
+
+            <label for="input-pass">Senha</label>
+            <input type="password" id="input-pass" class="password">
+            
+            <label for="input-rePass">Repita Senha</label>
+            <input type="password" id="input-rePass" class="repassword"
+            <button>Enviar</button>
+        </form>
+    </section>
+
+
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>

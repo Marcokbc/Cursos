@@ -5,7 +5,7 @@
         writable: false,
         enumerable: true,
         configurable: false,
-        value: cpfEnviado.replace(/\D+/g, '')
+        value: cpfEnviado.replace(/\D+/g, '')//substitui o que não é num por nada
       });
     }
   
